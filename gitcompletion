@@ -2259,6 +2259,11 @@ _git ()
 	svn)         _git_svn ;;
 	tag)         _git_tag ;;
 	whatchanged) _git_log ;;
+	#complition for git alias
+	lg)	     _git_log ;;
+	br)          _git_branch ;;
+	di)          _git_diff ;;
+	co)	     _git_checkout ;;
 	*)           COMPREPLY=() ;;
 	esac
 }
